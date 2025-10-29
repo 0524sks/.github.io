@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    color: 1b0529;
+    font-family : "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN",
+      "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+}
+
+/*全体コンテンツ幅*/
+.header .contents-inner,
+.section-01 .contents-inner,
+.section-03 .contents-inner{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.section-02 .contents-inner,
+.section-04 .contents-inner,
+.footer .contents-inner{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/*ヘッダー*/
+.header{
+    border-top: 4px #6d238d solid;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.header-logo img{
+    width: 120px;
+    float: left;
+}
+.header-info{
+    float: right;
+    margin-top: 30px;
+}
+.header .g-nav{
+    clear: both;
+    margin-top: 130px;
+    background-color: #6d238d;
+    font-size: 18px;
+    color: #FFF;
+}
+.header .g-nav ul{
+    display:flex;
+}
+.header .g-nav ul li a{
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    width: 160px;
+    text-align: center;
+    padding: 20px;
+}
+.header .g-nav ul li a:hover{
+    background-color: #5c1669;
+}
+
+/*メインコンテンツ-全体*/
+main .mv img{
+    max-width: 100%;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.section-01,.section-02,.section-03,.section-04{
+    padding: 70px 0;
+}
+.tx-highlight{
+    background-color: #ded0e7;
+    font-weight: bold;
+    padding: 0 3px;
+    margin: 0 3px;
+}
+.tx-paragraph{
+    margin-top: 1em;
+}
+
+/*メインコンテンツ-sec01*/
+.lead-tx{
+    font-size: 20px;
+    margin:15px 0;
+    text-align: center;
+}
+
+/*メインコンテンツ-sec02*/
+.section-02{
+    background-color: #cfc5d5;
+}
+.col3{
+    display: flex;
+}
+.col3 .col3-item{
+    width: calc((100% - 36px) / 3); 
+    margin-left:18px;
+}
+.col3 .col3-item:nth-child(3n+1){
+    margin-left:0;
+}
+.col3 .col3-item .co3-img img{
+    max-width: 100%;
+}
+.button{
+    margin: 50px auto 0;
+    width: 240px;
+}
+.button a{
+    display: block;
+    background-color: #FFF;
+    border: #6d238d 1px solid;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #6d238d;
+    text-align: center;
+    text-decoration: none;
+    min-width: 240px;
+    padding: 12px 40px 12px 30px;
+}
+.button a:hover{
+    background-color: #ded0e7;
+    transition: background-color 0.5s;
+}
+
+/*メインコンテンツ-sec03*/
+.section-03{
+    background-image: url(file:///C:/Users/a.ogisaka/Documents/html_lesson/gym-html/images/bg_01.jpg);
+    color: #FFF;
+    background-attachment:fixed;
+}
+.section-03 .tx-highlight{
+    color: #1b0529;
+}
+.col2-img{
+    width: 180px;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+.tx-right{
+    text-align: right;
+}
+
+/*メインコンテンツ-sec04*/
+table{
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+table th{
+    border: solid 1px #b2a9b5;
+    background-color: #d9d4db;
+    padding: 10px;
+}
+table td{
+    border: solid 1px #b2a9b5;
+    padding: 10px;
+}
+
+/*フッター*/
+.footer{
+    padding: 30px 0;
+    background: linear-gradient(to bottom, #6d238d, #12125e);;
+    color: #FFF;
+}
+.footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+.footer-nav ul{
+    text-align: center;
+}
+.footer ul li{
+    display:inline;
+}
+.footer ul li a{
+    text-align: center;
+    padding: 0 5px;
+    border-left:1px solid #fff;
+}
+.footer ul li:first-child a{
+    border-left:none;
+}
+.footer ul li a:hover{
+    color: #b2a9b5;
+}
+.footer .copy{
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*追従ボタン*/
+.button_top{
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+}
+.button_top a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #6d238d;
+    display: inline-block;
+}
+.button_top a:hover{
+    background-color: #b2a9b5;
+    transition: background-color 0.5s;
+}
+
+/*--------　スマホ表示　--------*/
+
+@media screen and (max-width: 768px){
+    .contents-inner{
+        width: 90%;
+    }
+
+/*ヘッダー*/
+.header .g-nav .contents-inner{
+    width: 100%;
+}
+.header .g-nav ul{
+    display:flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.header .g-nav ul li{
+    width: 50%;
+}
+.header .g-nav ul li a{
+    width: auto;
+}
+/*メインコンテンツ-sec02*/
+
+.section-02 .contents-inner{
+    margin: 0 60px;
+    width: auto;
+}
+.col3{
+    display: block;
+}
+.col3 .col3-item{
+    margin-bottom: 60px;
+    width: auto;
+    margin-left: 0;
+}
+.col3 .col3-item:last-child{
+    margin-bottom: 0;
+}
+
+/*フッター*/
+.footer ul li a{
+    white-space: nowrap
+}
+
+}
