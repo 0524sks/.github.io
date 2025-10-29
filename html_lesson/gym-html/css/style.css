@@ -134,7 +134,7 @@ h3{
 
 /*メインコンテンツ-sec03*/
 .section-03{
-    background-image: url(file:///C:/Users/a.ogisaka/Documents/html_lesson/gym-html/images/bg_01.jpg);
+    background-image: url(images/bg_01.jpg);
     color: #FFF;
     background-attachment:fixed;
 }
@@ -263,5 +263,6 @@ table td{
 .footer ul li a{
     white-space: nowrap
 }
+
 
 }
