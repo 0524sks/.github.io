@@ -10,13 +10,13 @@ body{
 
 /*全体コンテンツ幅*/
 .header .contents-inner,
-.section-01 .contents-inner,
-.section-03 .contents-inner{
+.section-02 .contents-inner{
     max-width: 960px;
     margin: 0 auto;
 }
-.section-02 .contents-inner,
+.section-01 .contents-inner,
 .section-04 .contents-inner,
+.section-03 .contents-inner,
 .footer .contents-inner{
     max-width: 650px;
     margin: 0 auto;
@@ -28,11 +28,14 @@ body{
     font-size: 20px;
     padding-top: 20px;
 }
-.header-logo img{
+.header .head{
+    padding-bottom: 20px;
+}
+.header .head .header-logo img{
     width: 120px;
     float: left;
 }
-.header-info{
+.header .head .header-info{
     float: right;
     margin-top: 30px;
 }
@@ -52,7 +55,7 @@ body{
     text-decoration: none;
     width: 160px;
     text-align: center;
-    padding: 20px;
+    padding: 15px 20px;
 }
 .header .g-nav ul li a:hover{
     background-color: #5c1669;
@@ -96,7 +99,7 @@ h3{
 
 /*メインコンテンツ-sec02*/
 .section-02{
-    background-color: #cfc5d5;
+    background-color: #d9d6e1;
 }
 .col3{
     display: flex;
@@ -264,6 +267,4 @@ table td{
     white-space: nowrap
 }
 
-
 }
-
