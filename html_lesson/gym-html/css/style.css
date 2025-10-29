@@ -134,7 +134,7 @@ h3{
 
 /*メインコンテンツ-sec03*/
 .section-03{
-    background-image: url(images/bg_01.jpg);
+    background-image: url(../images/bg_01.jpg);
     color: #FFF;
     background-attachment:fixed;
 }
@@ -266,3 +266,4 @@ table td{
 
 
 }
+
