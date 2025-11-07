@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+/*--------　共通　--------*/
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #270407;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+img{
+    display: block;
+}
+.section{
+    padding: 80px 0;
+}
+.section.sec01 {
+    padding:0;
+}
+.contents-inner{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.sp-hidden{
+    display: block;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+p.lead{
+    text-align: center;
+    font-size: 12px;
+    color: #ed1c24;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+}
+.tx-paragraph{
+    margin-top: 1rem;
+}
+
+/*--------　header　--------*/
+.header .head-logo{
+    margin: 30px auto;
+    width: 10%;
+}
+.header .g-nav{
+    background: linear-gradient(0deg, rgba(0,0,0,1)0%, rgb(44,5,8)100%);
+}
+.header .g-nav ul{
+    display:flex;
+    justify-content:center;
+}
+.header .g-nav ul li a{
+    font-size: 18px;
+    color: #FFF;
+    padding: 12px 60px;
+    border-right: 1px dotted #f1ecec;
+    border-left: 1px dotted #f1ecec;
+    text-decoration: none;
+    display: block;
+}
+.header .g-nav ul li a:hover{
+    background-color: #ffffff;
+    color: #ed1c24;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+/*--------　section01　--------*/
+.section.sec01 .mv{
+    background-image: url(../images/index_bg01.webp);
+    background-size:cover;
+    min-height:500px;
+    display:flex;
+    align-items: center;
+}
+.section.sec01 .mv p{
+    text-align: left;
+}
+.section.sec01 .mv p.tx-paragraph{
+    margin-top: 2rem;
+}
+.section.sec01 .mv p span{ 
+    color: #FFF;
+    font-size: 28px;
+    background-color: #270407;
+    padding: 10px 20px;
+}
+
+/*--------　section03　--------*/
+.section.sec03 .col3{
+    display: flex;
+}
+.col3 .col3-item{
+    width: calc((100% - 36px) / 3); 
+    margin-left:18px;
+}
+.col3 .col3-item:nth-child(3n+1){
+    margin-left:0;
+}
+.col3 .col3-item .col3-img img{
+    max-width: 100%;
+}
+.col3 .col3-item .col3-info {
+    background-color: #270407;
+    color: #FFF;
+    padding: 15px;
+    border-top: 1px solid #ffffff;
+}
+
+/*--------　section04　--------*/
+.section.sec04 .contents-inner{
+    width: 100%;
+}
+.section.sec04{
+    background-image: url(../images/index_bg02.webp);
+    background-size: cover;
+    background-position: 30% 30%;
+}
+.section.sec04 .button {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 230px;
+    border: 1px solid #e5e5eb;
+    margin: 12rem auto 0;
+}
+.section.sec04 .button a{
+    position: relative;
+    display: block;
+    color: #270407;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+.section.sec04 .button a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 224, 0.4);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform .2s;
+}
+.section.sec04 .button a:hover:before{
+    transform: scaleX(1);
+}
+.section.sec04 .button a span{
+    z-index:1;
+    position:relative;
+}
+.section.sec04 .button a::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+}
+.col4{
+    margin-top: 30px;
+    display: flex;
+}
+.col4 .col4-item{
+    width: calc((100% - 36px) / 4); 
+    margin-left:18px;
+    height: 226px;
+    background: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col4 .col4-item:nth-child(4n+1){
+    margin-left:0;
+}
+.col4 .col4-item p{
+    color: #FFF;
+}
+.col4 .col4-item.col04-01{
+    background: linear-gradient(rgba(0, 0, 0, .3),  rgba(0, 0, 0, .4)), url(../images/index_im04.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-02{
+    background: linear-gradient(rgba(0, 0, 0, .3),  rgba(0, 0, 0, .4)), url(../images/index_im05.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-03{
+    background: linear-gradient(rgba(0, 0, 0, .3),  rgba(0, 0, 0, .4)), url(../images/index_im06.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-04{
+    background: linear-gradient(rgba(0, 0, 0, .3),  rgba(0, 0, 0, .4)), url(../images/index_im07.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-01:hover{
+    background: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .7)), url(../images/index_im04.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-02:hover{
+    background: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .7)), url(../images/index_im05.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-03:hover{
+    background: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .7)), url(../images/index_im06.webp);
+    background-position:center;
+    background-size: cover;
+}
+.col4 .col4-item.col04-04:hover{
+    background: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .7)), url(../images/index_im07.webp);
+    background-position:center;
+    background-size: cover;
+}
+
+/*--------　フッター　--------*/
+.footer .foot-logo img{
+    margin-top: 40px;
+    width: 15%;
+}
+.footer a{
+    text-decoration: none;
+    color: #270407;
+}
+.footer a:hover{
+    color: #ed1c24;
+}
+.foot-nav ul{
+    margin-top: 20px;
+    border-right: #cccccc 1px solid;
+    display: inline-block;
+}
+.foot-nav ul li{
+    display:inline;
+    border-left: #cccccc 1px solid;
+    padding: 0 20px;
+}
+.foot-small-nav ul{
+    margin-top: 30px;
+    text-align: right;
+}
+.foot-small-nav ul li{
+    font-size: 14px;
+    display:inline;
+    margin-right: 15px;
+}
+
+.footer .foot-copy{
+    margin-top: 10px;
+    background-color: #270407;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+}
+.toggle {
+  display: none;
+}
+/*--------------------------------
+            スマホ表示
+--------------------------------*/
+
+@media screen and (max-width: 768px){
+.contents-inner{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.pc-hidden{
+    display: block;
+}
+/*--------　header　--------*/
+.header .head-logo{
+    margin: 30px auto;
+    width: 40%;
+}
+  .toggle {
+    display: block;
+    position: fixed;
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #270407;
+    transition: .35s ease-in-out;
+    left: 6px;
+  }
+  .toggle span:nth-child(1) {
+    top: 9px;
+  }
+  .toggle span:nth-child(2) {
+    top: 18px;
+  }
+  .toggle span:nth-child(3) {
+    top: 27px;
+  }
+  .toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .toggle.active span:nth-child(2),
+  .toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.g-nav {
+    width: 80%;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -110%;
+    transition: ease 0.7s;
+  }
+  .header .g-nav.active {
+    top: 80px;
+  }
+  .g-nav.active ul {
+    display: block;
+    border-bottom: 1px dotted #b2a9b5;
+  }
+    .g-nav.active ul li a{
+        border-left: none;
+        border-right: none;
+        text-align: center;
+    }
+  .g-nav li+li a {
+    border-top: 1px dotted #b2a9b5;
+  }
+  .g-nav li:first-child a {
+    border: none;
+  }
+
+
+
+/*--------　section01　--------*/
+.section.sec01 .mv p span{
+    display: block;
+}
+
+/*--------　section03　--------*/
+.section.sec03 .col3{
+    display: block;
+}
+.col3 .col3-item{
+    width: 100%; 
+    margin-left: 0;
+    margin-top: 15px;
+}
+.col3 .col3-item .col3-img img{
+    max-width: 100%;
+}
+.col3 .col3-item .col3-info {
+    background-color: #270407;
+    color: #FFF;
+    padding: 15px;
+    border-top: 1px solid #ffffff;
+}
+
+/*--------　section04　--------*/
+.section.sec04 .contents-inner{
+    max-width: 100%;
+}
+.section.sec04{
+    background-image: url(../images/index_bg02.webp);
+    background-size: cover;
+    background-position: 30% 30%;
+}
+.section.sec04 .button {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 230px;
+    border: 1px solid #e5e5eb;
+    margin: 12rem auto 0;
+}
+.section.sec04 .button a{
+    position: relative;
+    display: block;
+    color: #270407;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+.section.sec04 .button a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 224, 0.4);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform .2s;
+}
+.section.sec04 .button a:hover:before{
+    transform: scaleX(1);
+}
+.section.sec04 .button a span{
+    z-index:1;
+    position:relative;
+}
+.section.sec04 .button a::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+}
+.col4{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col4 .col4-item{
+    width: 50%; 
+    margin:0;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------　フッター　--------*/
+.footer .foot-logo img{
+    margin-top: 30px;
+    width: 40%;
+}
+.foot-nav ul{
+    margin-top: 30px;
+    border: none;
+    width: 100%;
+}
+.foot-nav ul li{
+    display:block;
+    border-left:none;
+    border-bottom: #cccccc 1px solid;
+    padding:0;
+}
+.foot-nav ul li a{
+    display: block;
+    padding: 10px 20px;
+}
+.foot-small-nav ul li{
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.footer .foot-copy{
+    border-bottom: #ed1c24 2px solid;
+}
+
+}
